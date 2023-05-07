@@ -1,0 +1,135 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Enrolled Events</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #2c3e50; /* new background color */
+        padding-top: 50px;
+      }
+      h1 {
+        text-align: center;
+        color: #fff; /* new color for heading text */
+        margin-top: 30px;
+      }
+      p {
+        text-align: center;
+        color: #fff; /* new color for text */
+        font-size: 18px;
+      }
+      table {
+        margin: 30px auto;
+        border-collapse: collapse;
+        width: 90%;
+        max-width: 800px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        border-radius: 5px; /* add border radius */
+        overflow: hidden; /* hide overflowing content */
+      }
+      th, td {
+        text-align: left;
+        padding: 12px;
+      }
+      th {
+        background-color: #1abc9c; /* new color for table header */
+        color: #fff; /* new color for table header text */
+        font-weight: bold;
+      }
+      tr:nth-child(even) {
+        background-color: #ecf0f1; /* new color for even rows */
+      }
+      button {
+        background-color: #3498db; /* new color for button */
+        color: #fff;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #2980b9; /* new color for button on hover */
+      }
+
+      nav {
+        background-color: #1abc9c;
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 999;
+      }
+      .nav-link {
+        display: inline-block;
+        color: #fff;
+        font-size: 16px;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+      }
+      .nav-link:hover {
+        background-color: #148f77;
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+        <a href="#" class="nav-link">Dashboard</a>
+        <a href="#" class="nav-link">Tes Kualifikasi</a>
+        <a href="#" class="nav-link">Daftar Event</a>
+        <a href="#" class="nav-link">Enrolled Event</a>
+        <a href="#" class="nav-link">Daftar Sponsor</a>
+        <a href="#" class="nav-link">Logout</a>
+      </nav>
+    <h1>Enrolled Events</h1>
+    <p>Hi, Athlete Name! These are the events you have enrolled:</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Event Name</th>
+          <th>Stadium</th>
+          <th>Prize</th>
+          <th>Superseries Category</th>
+          <th>Specialization Category</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Capacity</th>
+          <th>Unenroll</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Event 1</td>
+          <td>Stadium A</td>
+          <td>$1000</td>
+          <td>Category 1</td>
+          <td>Specialization 1</td>
+          <td>2023-05-10</td>
+          <td>2023-05-15</td>
+          <td>50</td>
+          <td><button>Unenroll</button></td>
+        </tr>
+        <tr>
+          <td>Event 2</td>
+          <td>Stadium B</td>
+          <td>$500</td>
+          <td>Category 2</td>
+          <td>Specialization 2</td>
+          <td>2023-06-01</td>
+          <td>2023-06-05</td>
+          <td>100</td>
+          <td><button>Unenroll</button></td>
+        </tr>
+        <!-- add more rows for each enrolled event -->
+      </tbody>
+    </table>
+  </body
+
+{% endblock content %}
